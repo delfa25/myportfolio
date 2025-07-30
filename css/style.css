@@ -40,12 +40,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 a {
-    color: var(--color-secondary);
+    color: var(--purple-black);
     text-decoration: none;
-    transition: color 0.3 ease;
+    transition: 100ms;
 }
 a:hover {
-    color: var(--color-purple);
+    color: var(--color-secondary);
 }
 
 img {
@@ -66,7 +66,7 @@ img {
 .main-header {
     position: sticky;
     margin: 0;
-    padding: 0;
+    padding: 1.5rem 0;
     background-color: var(--color-background);
     border: 1px solid #f4f4f4;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -75,7 +75,100 @@ img {
     align-items: center;
 }
 
-.nav-zone {
+/* ============= logo ============= */
+.logo-zone span {
+    color: var(--color-purple);
+}
+
+/* ===========bar de navigation ============ */
+
+.nav-zone ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 1.2rem;
+}
+
+.nav-zone a {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.nav-zone a:after {
+    content: '';
+    background-color: var(--color-secondary);
+    height: 5px;
+    width: 0;
+    position: absolute;
+    border-radius: 100px;
+    bottom: 0;
+    left: 0;
+    transition: 500ms;
+}
+
+.nav-zone a:hover::after,
+.nav-zone a.active::after {
+    width: 100%;
+}
+
+/* ============ bouton contact ============ */
+
+.contact-btn-zone .contact-btn {
+    padding: 10px 25px;
+    border-radius: 1000px;
+    font-weight: bold;
+    transition: 500ms;
+    display: inline-block;
+    background-color: var(--color-secondary);
+    color: #ffffff;
+    z-index: -1;     
+}
+
+.contact-btn:hover {
+    box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    transform: translate(-5px);
+}
+
+/* =========== menu hamburger ============ */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* ================ en tete responsive ================= */
+@media (max-width: 992px) {
+    
+}
+
+/* ====================== section bienvenue ======================= */
+
+.welcome-zone {
+    padding: 5rem 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f3ebff;
 }
+
+.welcome-zone .welcome-text h1 {
+    font-size: 2rem;
+}
+
+.welcome-zone .welcome-text p {
+    font-size: 1rem;
+}
+
+.welcome-zone img {
+    display: block;
+    max-width: 300px;
+}
+
