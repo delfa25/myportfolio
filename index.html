@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mama Fadel DIAWARA - Portfolio</title>
+    <!-- CSP : autorise uniquement les ressources connues -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline';
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+        img-src 'self' data: https://ssl.gstatic.com https://res.cdn.office.net https://s.yimg.com https://proton.me https://www.zohowebstatic.com;
+        connect-src 'none';
+        frame-src 'none';
+        object-src 'none';
+    ">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="no-referrer-when-downgrade">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,26 +68,26 @@
     <main>
 
         <!-- ========== HERO ========== -->
-    <section class="hero-section" id="home">
+        <section class="hero-section" id="home">
             <div class="hero-content">
                 <p class="hero-greeting">Bonjour, je suis</p>
                 <h1 class="hero-name">Mama Fadel <span>DIAWARA</span></h1>
-                <p class="hero-title">Ingénieur en Génie logiciel | Développeur Full Stack</p>
+                <p class="hero-title">Ingénieur en Informatique &amp; Développeur Full Stack</p>
                 <p class="hero-desc">
-                Passionné par le développement web &amp; mobile,
+                    Titulaire d'une Licence MIAGE à l'IBAM, passionné par le développement web &amp; mobile,
                     la gestion des systèmes informatiques et la résolution de problèmes complexes.
                 </p>
                 <div class="hero-actions">
                     <a href="#contact" class="btn btn-primary">Me contacter</a>
-                    <a href="CV MAMA FADEL DIAWARA.pdf" target="_blank" class="btn btn-outline">
+                    <a href="CV MAMA FADEL DIAWARA.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
                         <i class="fa-solid fa-download"></i> Télécharger CV
                     </a>
                 </div>
                 <div class="hero-socials">
-                    <a href="https://github.com/delfa25" target="_blank" aria-label="GitHub">
+                    <a href="https://github.com/delfa25" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/mama-fadel-diawara-856ab0328" target="_blank" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/mama-fadel-diawara-856ab0328" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                     <a href="mailto:mamadiawara1962@gmail.com" aria-label="Email" onclick="openDirectMailModal(event)">
@@ -103,7 +117,7 @@
                         <img src="images/myimg.jpeg" alt="Mama Fadel DIAWARA">
                     </div>
                     <div class="about-text">
-                        <h3>Ingénieur en Génie logiciel | Développeur Full Stack</h3>
+                        <h3>Ingénieur Informatique &amp; Développeur Full Stack</h3>
                         <p>
                             Jeune ingénieur formé à l'Institut Burkinabé des Arts et Métiers (IBAM),
                             titulaire d'une Licence en Méthodes Informatiques Appliquées à la Gestion
@@ -148,11 +162,11 @@
                                 <i class="fa-brands fa-linkedin-in"></i>
                                 <div>
                                     <span class="info-label">LinkedIn</span>
-                                    <a class="info-value" href="https://www.linkedin.com/in/mama-fadel-diawara-856ab0328" target="_blank">Mama Fadel DIAWARA</a>
+                                    <a class="info-value" href="https://www.linkedin.com/in/mama-fadel-diawara-856ab0328" target="_blank" rel="noopener noreferrer">Mama Fadel DIAWARA</a>
                                 </div>
                             </div>
                         </div>
-                        <a href="CV MAMA FADEL DIAWARA.pdf" target="_blank" class="btn btn-primary">
+                        <a href="CV MAMA FADEL DIAWARA.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                             <i class="fa-solid fa-download"></i> Télécharger mon CV
                         </a>
                     </div>
@@ -376,7 +390,7 @@
                         <div class="portfolio-tags">
                             <span class="tag">GitHub</span>
                         </div>
-                        <a href="https://github.com/delfa25/Facility-Manager" target="_blank" class="btn btn-outline btn-sm">
+                        <a href="https://github.com/delfa25/Facility-Manager" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
                             <i class="fa-brands fa-github"></i> Voir le projet
                         </a>
                     </div>
@@ -392,7 +406,7 @@
                             <span class="tag">CSS</span>
                             <span class="tag">JavaScript</span>
                         </div>
-                        <a href="https://github.com/delfa25" target="_blank" class="btn btn-outline btn-sm">
+                        <a href="https://github.com/delfa25" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
                             <i class="fa-brands fa-github"></i> Voir sur GitHub
                         </a>
                     </div>
@@ -412,7 +426,7 @@
 
                 </div>
                 <div class="portfolio-more">
-                    <a href="https://github.com/delfa25" target="_blank" class="btn btn-primary">
+                    <a href="https://github.com/delfa25" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                         <i class="fa-brands fa-github"></i> Voir tous mes projets sur GitHub
                     </a>
                 </div>
@@ -450,21 +464,21 @@
                                 </div>
                             </div>
                             <div class="contact-item">
-                                <a class="contact-icon" href="https://github.com/delfa25" target="_blank" title="GitHub">
+                                <a class="contact-icon" href="https://github.com/delfa25" target="_blank" rel="noopener noreferrer" title="GitHub">
                                     <i class="fa-brands fa-github"></i>
                                 </a>
                                 <div>
                                     <span class="contact-label">GitHub</span>
-                                    <a href="https://github.com/delfa25" target="_blank">github.com/delfa25</a>
+                                    <a href="https://github.com/delfa25" target="_blank" rel="noopener noreferrer">github.com/delfa25</a>
                                 </div>
                             </div>
                             <div class="contact-item">
-                                <a class="contact-icon" href="https://www.linkedin.com/in/mama-fadel-diawara-856ab0328" target="_blank" title="LinkedIn">
+                                <a class="contact-icon" href="https://www.linkedin.com/in/mama-fadel-diawara-856ab0328" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
                                 <div>
                                     <span class="contact-label">LinkedIn</span>
-                                    <a href="https://www.linkedin.com/in/mama-fadel-diawara-856ab0328" target="_blank">Mama Fadel DIAWARA</a>
+                                    <a href="https://www.linkedin.com/in/mama-fadel-diawara-856ab0328" target="_blank" rel="noopener noreferrer">Mama Fadel DIAWARA</a>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -481,11 +495,11 @@
                     <form class="contact-form" onsubmit="handleFormSubmit(event)">
                         <div class="form-group">
                             <label for="name">Nom complet</label>
-                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required autocomplete="name">
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                            <input type="email" id="email" name="email" placeholder="votre@email.com" required autocomplete="email">
                         </div>
                         <div class="form-group">
                             <label for="subject">Sujet</label>
@@ -514,10 +528,10 @@
                 </div>
                 <p>&copy; 2026 Mama Fadel DIAWARA. Tous droits réservés.</p>
                 <div class="footer-socials">
-                    <a href="https://github.com/delfa25" target="_blank" aria-label="GitHub">
+                    <a href="https://github.com/delfa25" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/mama-fadel-diawara-856ab0328" target="_blank" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/mama-fadel-diawara-856ab0328" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                     <a href="mailto:mamadiawara1962@gmail.com" aria-label="Email" onclick="openDirectMailModal(event)">
@@ -538,9 +552,7 @@
             <div class="mail-modal-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
             <h3 id="mailModalTitle">Choisissez votre messagerie</h3>
             <p>Le message est prêt. Ouvrez votre client email préféré pour l'envoyer.</p>
-            <div class="mail-options" id="mailOptions">
-                <!-- généré dynamiquement par JS -->
-            </div>
+            <div class="mail-options" id="mailOptions"></div>
             <button class="btn btn-outline btn-sm mail-modal-cancel" onclick="closeMailModal()">Annuler</button>
         </div>
     </div>
@@ -548,7 +560,7 @@
     <script>
         // ---- Menu hamburger ----
         const menuToggle = document.querySelector('.menu-toggle');
-        const mobileNav = document.getElementById('mobileNav');
+        const mobileNav  = document.getElementById('mobileNav');
 
         menuToggle.addEventListener('click', () => {
             mobileNav.classList.toggle('open');
@@ -562,7 +574,7 @@
 
         // ---- Active nav link on scroll ----
         const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.nav-zone a');
+        const navLinks  = document.querySelectorAll('.nav-zone a');
 
         function updateActiveNav() {
             let current = 'home';
@@ -587,32 +599,24 @@
         // ---- Header sticky shadow ----
         window.addEventListener('scroll', () => {
             const header = document.querySelector('.main-header');
-            if (window.scrollY > 10) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
+            header.classList.toggle('scrolled', window.scrollY > 10);
+        }, { passive: true });
 
-        // ---- Form submit : ouvre le modal de choix messagerie ----
-        // Données du formulaire stockées temporairement
-        let _mailData = {};
-
+        // ---- Form submit ----
         function handleFormSubmit(e) {
             e.preventDefault();
             const name    = document.getElementById('name').value.trim();
             const email   = document.getElementById('email').value.trim();
             const subject = document.getElementById('subject').value.trim();
             const message = document.getElementById('message').value.trim();
-
-            const body = `De : ${name} (${email})\n\n${message}`;
-            const to   = 'mamadiawara1962@gmail.com';
-
-            _mailData = { to, subject, body };
-            openMailModal(to, subject, body);
+            openMailModal(
+                'mamadiawara1962@gmail.com',
+                subject,
+                'De : ' + name + ' (' + email + ')\n\n' + message
+            );
         }
 
-        // ---- Ouvre le modal depuis les icônes de contact (sans formulaire) ----
+        // ---- Modal depuis icônes ----
         function openDirectMailModal(e) {
             e.preventDefault();
             openMailModal(
@@ -623,64 +627,64 @@
         }
 
         function openMailModal(to, subject, body) {
-            const enc = (s) => encodeURIComponent(s);
+            const enc = encodeURIComponent;
 
             const providers = [
                 {
                     name:  'Gmail',
                     icon:  'https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico',
                     color: '#EA4335',
-                    url:   `https://mail.google.com/mail/?view=cm&fs=1&to=${enc(to)}&su=${enc(subject)}&body=${enc(body)}`
+                    url:   'https://mail.google.com/mail/?view=cm&fs=1&to=' + enc(to) + '&su=' + enc(subject) + '&body=' + enc(body)
                 },
                 {
                     name:  'Outlook / Hotmail',
                     icon:  'https://res.cdn.office.net/assets/mail/pwa/v1/pngs/favicon_large_1x.png',
                     color: '#0078D4',
-                    url:   `https://outlook.live.com/mail/0/deeplink/compose?to=${enc(to)}&subject=${enc(subject)}&body=${enc(body)}`
+                    url:   'https://outlook.live.com/mail/0/deeplink/compose?to=' + enc(to) + '&subject=' + enc(subject) + '&body=' + enc(body)
                 },
                 {
                     name:  'Yahoo Mail',
                     icon:  'https://s.yimg.com/rz/l/yahoo_en-US_f_p_142x37_2x.png',
                     color: '#6001D2',
-                    url:   `https://compose.mail.yahoo.com/?to=${enc(to)}&subject=${enc(subject)}&body=${enc(body)}`
+                    url:   'https://compose.mail.yahoo.com/?to=' + enc(to) + '&subject=' + enc(subject) + '&body=' + enc(body)
                 },
                 {
                     name:  'Proton Mail',
                     icon:  'https://proton.me/favicons/favicon-32x32.png',
                     color: '#6D4AFF',
-                    url:   `https://mail.proton.me/u/0/inbox#compose?to=${enc(to)}&subject=${enc(subject)}&body=${enc(body)}`
+                    url:   'https://mail.proton.me/u/0/inbox#compose?to=' + enc(to) + '&subject=' + enc(subject) + '&body=' + enc(body)
                 },
                 {
                     name:  'Zoho Mail',
                     icon:  'https://www.zohowebstatic.com/sites/zweb/images/favicon.ico',
                     color: '#E42527',
-                    url:   `https://mail.zoho.com/zm/#compose?to=${enc(to)}&subject=${enc(subject)}&body=${enc(body)}`
+                    url:   'https://mail.zoho.com/zm/#compose?to=' + enc(to) + '&subject=' + enc(subject) + '&body=' + enc(body)
                 },
                 {
-                    name:  'Client email (défaut)',
+                    name:   'Client email (défaut)',
                     iconFA: 'fa-solid fa-desktop',
-                    color: '#4B5563',
-                    url:   `mailto:${to}?subject=${enc(subject)}&body=${enc(body)}`
+                    color:  '#4B5563',
+                    url:    'mailto:' + to + '?subject=' + enc(subject) + '&body=' + enc(body)
                 }
             ];
 
             const container = document.getElementById('mailOptions');
             container.innerHTML = '';
 
-            providers.forEach(p => {
+            providers.forEach(function(p) {
                 const btn = document.createElement('a');
-                btn.href = p.url;
-                btn.target = p.name === 'Client email (défaut)' ? '_self' : '_blank';
-                btn.rel = 'noopener noreferrer';
+                btn.href      = p.url;
+                btn.target    = p.name === 'Client email (défaut)' ? '_self' : '_blank';
+                btn.rel       = 'noopener noreferrer';
                 btn.className = 'mail-option-btn';
                 btn.style.setProperty('--provider-color', p.color);
 
                 const iconHTML = p.iconFA
-                    ? `<i class="${p.iconFA}" style="color:${p.color};font-size:1.4rem;"></i>`
-                    : `<img src="${p.icon}" alt="${p.name}" onerror="this.style.display='none'">`;
+                    ? '<i class="' + p.iconFA + '" style="color:' + p.color + ';font-size:1.4rem;"></i>'
+                    : '<img src="' + p.icon + '" alt="' + p.name + '" onerror="this.style.display=\'none\'">';
 
-                btn.innerHTML = `${iconHTML}<span>${p.name}</span>`;
-                btn.addEventListener('click', () => {
+                btn.innerHTML = iconHTML + '<span>' + p.name + '</span>';
+                btn.addEventListener('click', function() {
                     closeMailModal();
                     showConfirmation();
                 });
@@ -696,23 +700,22 @@
             document.body.style.overflow = '';
         }
 
-        // Fermer en cliquant sur l'overlay
         document.getElementById('mailModal').addEventListener('click', function(e) {
             if (e.target === this) closeMailModal();
         });
 
-        // Fermer avec Échap
-        document.addEventListener('keydown', (e) => {
+        document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') closeMailModal();
         });
 
         function showConfirmation() {
             const btn = document.querySelector('.contact-form button[type="submit"]');
+            if (!btn) return;
             const originalHTML = btn.innerHTML;
             btn.innerHTML = '<i class="fa-solid fa-check"></i> Message préparé !';
             btn.style.background = 'linear-gradient(135deg, #16a34a, #22c55e)';
             btn.disabled = true;
-            setTimeout(() => {
+            setTimeout(function() {
                 btn.innerHTML = originalHTML;
                 btn.style.background = '';
                 btn.disabled = false;
